@@ -1,0 +1,201 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background-color: #D3D3D3;
+}
+
+/* Container for center alignment */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* About Header Section */
+.about-header {
+  background-image: url(./IMG_5438.JPG);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #FCA70C;
+}
+
+.about-header p {
+  font-size: 1.5rem;
+  color: #133b4f;
+}
+
+/* Navigation Bar */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: #3a3a3a;
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #c4c4f7;
+  transition: all .5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.signup-btn {
+  padding: 10px 20px;
+  background: #c4c4f7;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+/* About Content Section */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  width: 60%;
+  margin-right: 2rem;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #FCA70C;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-image {
+  width: 35%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlights Section */
+.about-highlights {
+  background-color: #D3D3D3;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about-highlights h2 {
+  color: #FCA70C;
+  margin-bottom: 1rem;
+}
+
+.about-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-highlights li {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .about-text {
+      width: 100%;
+      margin-bottom: 2rem;
+  }
+
+  .about-image {
+      width: 100%;
+  }
+
+  .about-header h1 {
+      font-size: 2.5rem;
+  }
+
+  .about-header p {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .about-header h1 {
+      font-size: 2rem;
+  }
+
+  .about-header p {
+      font-size: 1rem;
+  }
+
+  .about-content {
+      padding: 2rem 1rem;
+  }
+
+  .about-text h2 {
+      font-size: 1.8rem;
+  }
+
+  .about-text p {
+      font-size: 1rem;
+  }
+
+  .signup-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}
